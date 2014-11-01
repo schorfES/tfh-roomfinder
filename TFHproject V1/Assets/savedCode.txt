@@ -1,0 +1,79 @@
+
+		function generateCubes(number: Number): void {
+			
+			addCube(500,0,0,0);
+			var i: Number = 2;
+			while( i <= number ) {
+				var x: Number = Math.ceil( Math.random() * 12000) - (root.width / 2);
+				var z: Number = Math.ceil( Math.random() * 12000);
+				addCube(500,x,0,z);
+				i++;
+			}
+		}
+		function addCube(size,x,y,z :Number): void {
+			
+			var textur       :BitmapAssetMaterial = new BitmapAssetMaterial( "Cubetextur" );
+			var materialList :MaterialsList       = new MaterialsList(null);
+		    materialList.addMaterial( textur, "front" );
+			materialList.addMaterial( textur, "back" );
+			materialList.addMaterial( textur, "right" );
+			materialList.addMaterial( textur, "left" );
+			materialList.addMaterial( textur, "top" );
+			materialList.addMaterial( textur, "bottom" );
+
+			var kubus = new Cube( materialList, size, size, size, 16, 16, 16, 0.5 );
+			kubus.x = x;
+			kubus.y = y;
+			kubus.z = z;
+			scene.addChild( kubus );
+			
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------
+
+
+
+				if( diffX != 0 ) {
+					if( diffX > 0 ) { vorz = -1; } else { vorz = 1; }
+					this.camera.setXPos( Math.round( this.camera.getXPos() + (this.speedX * vorz) ) );
+					trace("   ...xCoord: soll:"+ this.point.x +" ist: "+ this.camera.getXPos() );
+				}
+				
+				if( diffY != 0 ) {
+					if( diffY > 0 ) { vorz = -1; } else { vorz = 1; }
+					this.camera.setYPos( Math.round( this.camera.getYPos() + (this.speedY * vorz) ) );
+					trace("   ...yCoord");
+				}
+				
+				if( diffZ != 0 ) {
+					if( diffZ > 0 ) { vorz = -1; } else { vorz = 1; }
+					this.camera.setZPos( Math.round( this.camera.getZPos() + (this.speedZ * vorz) ) );
+					trace("   ...zCoord: soll:"+ this.point.z +" ist: "+ this.camera.getZPos() );
+				}
+
+
+
+
+
+
+
+
+---------------------------------------
+
+
+loader = new Loader();
+loader.load(new URLRequest("bee.swf"));
+addChild(loader);

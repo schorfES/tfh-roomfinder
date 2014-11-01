@@ -1,0 +1,114 @@
+﻿package
+{
+import flash.events.*;
+import flash.display.*;
+import flash.system.*;
+
+
+public class TFHinputManager extends Sprite
+{
+
+	var scene3D:TFHscene3D;
+	var myMenu:TFHmenu;
+	var menuActive:Boolean;
+	var hitSceneField:Sprite;
+	var selectedFloor:uint;
+	
+	function TFHinputManager()
+	{
+		trace( "\n <<< manager: "+this );
+		
+		this.stage.scaleMode = StageScaleMode.NO_SCALE;
+		System.setClipboard( "TFH::roomFinder" );
+		
+		scene3D = new TFHscene3D( this );
+		myMenu = new TFHmenu( this.stage.stageWidth, 0.1*this.stage.stageHeight, 0,0, this );
+		
+		addChild( scene3D );
+		addChild( myMenu );
+		
+		scene3D.initScene();
+		
+		trace( " ###<>### hitAREA: "+this.stage.stageWidth+", "+this.stage.stageHeight );
+		hitSceneField = new Sprite();
+		hitSceneField.graphics.beginFill(0xCCFF00, 0);
+		hitSceneField.graphics.drawRect( 0, 0, this.stage.stageWidth, this.stage.stageHeight - 0.7*myMenu.height );
+		hitSceneField.graphics.endFill();
+		addChild( hitSceneField );
+		
+		this.stage.addEventListener( MouseEvent.MOUSE_DOWN, globalMouseDown );
+		this.stage.addEventListener( MouseEvent.MOUSE_UP, globalMouseUp );
+		
+		activateScene3D();
+		trace( "\n <<< managerInited: "+this );
+	}
+	
+	function processMenuRequest( house:String, floor:uint, room:String ) :void
+	{
+		trace( "got USER-REQUEST = "+house+""+room );
+		selectedFloor = floor;
+		scene3D.deactivateControls();
+//		scene3D.activateLoop3D();
+		if( house == scene3D.targetHouseName )
+		{
+			scene3D.currentTarget.openAtFloor( selectedFloor );			
+			return;
+		}
+		scene3D.switchToHouse( house );
+		addEventListener( "targetReached", openUsersTarget );
+	}
+	function openUsersTarget( event:Event )
+	{
+		scene3D.currentTarget.openAtFloor( selectedFloor );
+		removeEventListener( "targetReached", openUsersTarget );
+	}
+	
+	function globalMouseDown( event:MouseEvent ) :void
+	{
+		if( myMenu.hitTestPoint( event.stageX, event.stageY ) )
+		{
+			activateMenu();
+		}
+		else
+		{
+			activateScene3D();
+			scene3D.pressMouse( event );
+		}
+	}
+	function activateMenu() :void
+	{
+		menuActive = true;
+		scene3D.deactivateControls();
+		myMenu.activateMenu();
+	}
+	function activateScene3D() :void
+	{
+		scene3D.activateControls();
+		myMenu.deactivateMenu();
+		menuActive = false;
+	}
+	
+	function globalMouseUp( event:MouseEvent ) :void
+	{
+/*		if( !scene3D.processing && !scene3D.currentTarget.processing )
+		{
+			scene3D.deactivateLoop3D();
+		}*/
+		if( myMenu.hitTestPoint( event.stageX, event.stageY ) )
+		{
+			activateMenu();
+		}
+		trace( "MouseGoesUp" );
+	}
+
+	function keyEvent( event:KeyboardEvent ) :void
+	{
+		trace( " ### DISPATCHING TO MENU K ### " )
+		myMenu.dispatchEvent( event );
+		if( menuActive )
+			return;
+		trace( " ### DISPATCHING TO SCENE K ### " );
+		scene3D.dispatchEvent( event );
+	}
+}
+}

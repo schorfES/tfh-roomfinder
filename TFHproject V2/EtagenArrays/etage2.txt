@@ -1,0 +1,209 @@
+raumnummer  = 201;
+raumname[200] = new Point3D(0,40,0);
+
+raumnummer  = 201;
+raumname[201] = new Point3D(150,40,0);
+
+raumnummer  = 202;
+raumname[202] = new Point3D(150,40,150);
+
+raumnummer  = 203;
+raumname[203] = new Point3D(0,40,150);
+
+raumnummer  = 204;
+raumname[204] = new Point3D(0,40,157);
+
+raumnummer  = 205;
+raumname[205] = new Point3D(157,40,157);
+
+raumnummer  = 206;
+raumname[206] = new Point3D(120,40,100);
+
+raumnummer  = 207;
+raumname[207] = new Point3D(200,40,200);
+
+raumnummer  = 208;
+raumname[208] = new Point3D(200,40,175);
+
+raumnummer  = 209;
+raumname[209] = new Point3D(200,40,150);
+
+raumnummer  = 210;
+raumname[210] = new Point3D(0,40,0);
+
+raumnummer  = 211;
+raumname[211] = new Point3D(150,40,0);
+
+raumnummer  = 212;
+raumname[212] = new Point3D(150,40,150);
+
+raumnummer  = 213;
+raumname[213] = new Point3D(0,40,150);
+
+raumnummer  = 214;
+raumname[214] = new Point3D(0,40,157);
+
+raumnummer  = 215;
+raumname[215] = new Point3D(157,40,157);
+
+raumnummer  = 216;
+raumname[216] = new Point3D(120,40,100);
+
+raumnummer  = 217;
+raumname[217] = new Point3D(200,40,200);
+
+raumnummer  = 218;
+raumname[218] = new Point3D(200,40,175);
+
+raumnummer  = 219;
+raumname[219] = new Point3D(200,40,150);
+
+raumnummer  = 220;
+raumname[220] = new Point3D(0,40,0);
+
+raumnummer  = 221;
+raumname[221] = new Point3D(150,40,0);
+
+raumnummer  = 222;
+raumname[222] = new Point3D(150,40,150);
+
+raumnummer  = 223;
+raumname[223] = new Point3D(0,40,150);
+
+raumnummer  = 224;
+raumname[224] = new Point3D(0,40,157);
+
+raumnummer  = 225;
+raumname[225] = new Point3D(157,40,157);
+
+raumnummer  = 226;
+raumname[226] = new Point3D(120,40,100);
+
+raumnummer  = 227;
+raumname[227] = new Point3D(200,40,200);
+
+raumnummer  = 228;
+raumname[228] = new Point3D(200,40,175);
+
+raumnummer  = 229;
+raumname[229] = new Point3D(200,40,150);
+
+raumnummer  = 230;
+raumname[230] = new Point3D(0,40,0);
+
+raumnummer  = 231;
+raumname[231] = new Point3D(150,40,0);
+
+raumnummer  = 232;
+raumname[232] = new Point3D(150,40,150);
+
+raumnummer  = 233;
+raumname[233] = new Point3D(0,40,150);
+
+raumnummer  = 234;
+raumname[234] = new Point3D(0,40,157);
+
+raumnummer  = 235;
+raumname[235] = new Point3D(157,40,157);
+
+raumnummer  = 236;
+raumname[236] = new Point3D(120,40,100);
+
+raumnummer  = 237;
+raumname[237] = new Point3D(200,40,200);
+
+raumnummer  = 238;
+raumname[238] = new Point3D(200,40,175);
+
+raumnummer  = 239;
+raumname[239] = new Point3D(200,40,150);
+
+raumnummer  = 240;
+raumname[240] = new Point3D(0,40,0);
+
+raumnummer  = 241;
+raumname[241] = new Point3D(150,40,0);
+
+raumnummer  = 242;
+raumname[242] = new Point3D(150,40,150);
+
+raumnummer  = 243;
+raumname[243] = new Point3D(0,40,150);
+
+raumnummer  = 244;
+raumname[244] = new Point3D(0,40,157);
+
+raumnummer  = 245;
+raumname[245] = new Point3D(157,40,157);
+
+raumnummer  = 246;
+raumname[246] = new Point3D(120,40,100);
+
+raumnummer  = 247;
+raumname[247] = new Point3D(200,40,200);
+
+raumnummer  = 248;
+raumname[248] = new Point3D(200,40,175);
+
+raumnummer  = 249;
+raumname[249] = new Point3D(200,40,150);
+
+raumnummer  = 250;
+raumname[250] = new Point3D(0,40,0);
+
+raumnummer  = 251;
+raumname[251] = new Point3D(150,40,0);
+
+raumnummer  = 252;
+raumname[252] = new Point3D(150,40,150);
+
+raumnummer  = 253;
+raumname[253] = new Point3D(0,40,150);
+
+raumnummer  = 254;
+raumname[254] = new Point3D(0,40,157);
+
+raumnummer  = 255;
+raumname[255] = new Point3D(157,40,157);
+
+raumnummer  = 256;
+raumname[256] = new Point3D(120,40,100);
+
+raumnummer  = 257;
+raumname[257] = new Point3D(200,40,200);
+
+raumnummer  = 258;
+raumname[258] = new Point3D(200,40,175);
+
+raumnummer  = 259;
+raumname[259] = new Point3D(200,40,150);
+
+raumnummer  = 260;
+raumname[260] = new Point3D(0,40,0);
+
+raumnummer  = 261;
+raumname[261] = new Point3D(150,40,0);
+
+raumnummer  = 262;
+raumname[262] = new Point3D(150,40,150);
+
+raumnummer  = 263;
+raumname[263] = new Point3D(0,40,150);
+
+raumnummer  = 264;
+raumname[264] = new Point3D(0,40,157);
+
+raumnummer  = 265;
+raumname[265] = new Point3D(157,40,157);
+
+raumnummer  = 266;
+raumname[266] = new Point3D(120,40,100);
+
+raumnummer  = 267;
+raumname[267] = new Point3D(200,40,200);
+
+raumnummer  = 268;
+raumname[268] = new Point3D(200,40,175);
+
+raumnummer  = 269;
+raumname[269] = new Point3D(200,40,150);

@@ -1,0 +1,1 @@
+﻿package{	public class TFHPoint3D	{		public var x     : Number;		public var y     : Number;		public var z     : Number;		public var yaw   : Number;		public var pitch : Number;				public function TFHPoint3D(x,y,z,yaw,pitch: Number) {			this.x     = x;			this.y     = y;			this.z     = z;			this.yaw   = yaw;			this.pitch = pitch;		}				}}
